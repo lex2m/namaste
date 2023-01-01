@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Namaste</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?
+    family.Poppins:wght@l00;200;300;400;500;600;700;800,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+<a name="home"></a>
+    <section class="hero">
+        <div class="main-width scroll">
+             <header>
+                 <div class="logo scroll">
+                        <p>Namaste</p>
+                    </div> 
+    <nav>
+        <div class="hamb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li class="btn"><a href="#contact">Contact Me</a></li>
+            </ul>
+    </nav>
+ </header>
+
+    <div class="container scroll">
+        <div class="hero-text scroll">
+            <h3>Hi, There!</h3>
+            <h1>I am <span class="namaste scroll"></span></h1>
+            <p>For the future.</p>
+            <div class="social scroll">
+                <a href="https://github.com/lex2m"><i class="fa-brands fa-github scroll"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in scroll"></i></a>
+                <a href="https://instagram.com/ondersaricayir"><i class="fa-brands fa-instagram scroll"></i></a>
+            </div>
+            <button class="learn-more scroll">
+             <a href="#about">
+            
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow scroll"></span>
+                </span>
+                <span class="button-text scroll">About Me </span></a>
+              </button>
+        </div>
+       
+    </div>
+ </div>
+ </section> 
+    
+ 
+    <!--About-->
+    <a name="about"></a>
+    <section class="about scroll">
+        <div class="main scroll">
+            <img src="images/about.jpg" alt="">
+            <div class="about-text scroll">
+                <h2>About Me</h2>
+                <h5>Develpoer <span>& Designer</span></h5>
+                <p>Software engineer with a proven ability to adapt in both self-starting and
+                    collaborative environments while staying focused on achieving highquality results under strict
+                    deadlines. This quality and results-based
+                    approach drove me to collaborate with the VP of sales at Squarespace to
+                    create a digital marketing campaign that tripled average signups in a
+                    single month. Eager to obtain a challenging position at a prestigious
+                    company like Dream Version that will expand my learning and build upon
+                    my developer skills.</p>
+             <a href="https://gmail.com"><button type="button" id="talk"> Let's Talk </button></a>
+            </div>
+        </div>
+    </section>
+
+       <!--Services-->
+       <a name="service"></a>
+       <div class="service scroll">
+           <div class="title scroll">
+               <h2>Our Services</h2>
+           </div>
+           <div class="box">
+               <div class="card scroll">
+                   <i class="fa-solid fa-bars scroll"></i>
+                   <h5>Web Development</h5>
+                   <div class="pra scroll">
+                       <p>Every website should be built with two primary goals: Firstly, it needs
+                           to work across all devices. Secondly, it needs to be fast as possible.
+                       </p>
+                       <p style="text-align: center;"><a href="#home" class="button" id="more1">Read More</a></p>
+   
+                   </div>
+               </div>
+   
+               <div class="card scroll">
+                   <i class="fa-solid fa-user scroll"></i>
+                   <h5>Social Media</h5>
+                   <div class="pra scroll">
+                       <p>Think like a publisher, not like a marketer.
+   
+                       </p>
+                       <p style="text-align: center;"><a href="#home" class="button scroll" id="more">Read More</a></p>
+   
+                   </div>
+               </div>
+   
+           </div>
+       </div>
+       <!--Contact Me-->
+        <a name="contact"></a>
+       <div class="contact scroll">
+           <p>Let Me Get You A Beautiful Website.</p>
+           <a class="button-two" href="https://instagram.com/ondersaricayir">Hire Me</a>
+       </div>
+   
+   
+       <!-- Footer Start -->
+   
+       <footer class="scroll">
+           <p name="footer">Namaste</p>
+           <p>For more HTML, CSS and coding tutorial - please click on the link below to subscribe to my channels:</p>
+           <div class="social">
+               <a href="https://github.com/lex2m"><i class="fa-brands fa-github"></i></a>
+               <a href="linkedin.com/in/önder-faruk-sariçayir-703376250/"><i class="fa-brands fa-linkedin-in"></i></a>
+               <a href="https://instagram.com/ondersaricayir"><i class="fa-brands fa-instagram"></i></a>
+           </div>
+           <p class="end">CopyRight By Namaste</p>
+       </footer>
+   
+
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+ <script>
+    var typed = new Typed(".namaste", {
+        strings:["Namaste.","Web Developer.","Önder Sarıçayır.","UX Designer."],
+        typeSpeed: 70,
+        backSpeed: 60,
+        loop:true
+
+    });
+
+    var hamburger = document.querySelector(".hamb");
+    var navlist = document.querySelector(".nav-list");
+    var links = document.querySelector(".nav-list li");
+    
+    hamburger.addEventListener("click", function(){
+        this.classList.toggle("click");
+        navlist.classList.toggle("open");
+    })
+
+    ScrollReveal().reveal('.scroll',{delay:100});
+  
+
+ </script>
+
+</body>
+
+</html>

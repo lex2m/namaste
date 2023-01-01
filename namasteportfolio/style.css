@@ -1,0 +1,562 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+
+.main-width{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.769),rgba(34, 34, 34, 0.769)),url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo p{
+    width: 155px;
+    height: 55px;
+    background: transparent;
+    font-weight: 600;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    cursor: pointer;
+    float: left;
+}
+nav .hamb{
+    width: 35px;
+    height: 24px;
+    right: 3%;
+    top: 60px;
+    z-index: 5;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+nav .hamb span{
+    display: block;
+    background: #8d02f7;
+    width: 100%;
+    height: 3px;
+    transition: .3s;
+    transition-property: transform,opacity;
+}
+nav .hamb span:nth-child(2){
+    margin: 7px 0px;
+}
+nav .nav-list{
+    list-style: none;
+}
+nav .nav-list li{
+    display: inline-block;
+}
+nav .nav-list li a{
+    display: inline-block;
+    color: #eee;
+    margin-left: 65px;
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+nav .nav-list li:not(:last-child) a:hover{
+    color: #ae4df8;
+    transition: .4s;
+}
+nav .nav-list li.btn a{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #8d02f7;
+    padding: 9px 28px;
+    border-radius: 30px;
+    line-height: 1.3;
+    color: #8d02f7;
+    font-weight: 500px;
+    transition: .3s;
+}
+nav .nav-list li.btn:hover a{
+    background: #8d02f7;
+    color: #fff;
+    border: 2px solid #8d02f7;
+    transition: .3s;
+}
+.container{
+    padding-top: 190px;
+}
+.container .hero-text{
+    margin-bottom: 40px;
+}
+.container .hero-text h1{
+    color: white;
+    font-size: 47px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin:20px 0px 20px;
+}
+.namaste{
+    color: #e01dfe;
+}
+.container .hero-text h3{
+    color: #eee;
+    font-weight: 600;
+    font-size: 25px;
+}
+.container .hero-text p{
+    width: 440px;
+    max-width: 100%;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: white;
+}
+.social a{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #eee;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 35px;
+    transition: .4s;
+
+}
+.social a:hover{
+    transform: scale(1.2);
+    background-color: #e01dfe;
+    transition: .4s;
+}
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #ae4df8;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+   a{
+    color: white;
+   }
+@media screen and (max-width: 930px) {
+    nav .hamb{
+        display: initial;
+    }    
+    .click{
+        top: 46px;
+    }
+    .click span{
+        position: absolute;
+        margin-top: 12px;
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child{
+        transform: rotate(40deg);
+        top: 0;
+    }
+    nav .nav-list{
+        position: absolute;
+        top: 90px;
+        right: -65%;
+        bottom: 0;
+        width: 60%;
+        height: 50%;
+        background-color: black;
+        z-index: 2;
+        padding: 6% 9%;
+        transition: .3s right;
+        border-radius: 10px;
+    }
+    nav .nav-list li{
+        display: block;
+    }
+    nav .nav-list li a{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 0;
+       margin-bottom: 40px; 
+    }
+    nav .nav-list li.btn a{
+        position: absolute;
+        bottom: 0%;
+        right: 20%;
+        left: 20%;
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+    nav .nav-list.open{
+        right: 0;
+    }
+
+}
+
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: white;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color: black;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-text h5 {
+    color: black;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-weight: 550;
+}
+
+.about-text p::selection {
+    color: #c80cc8;
+}
+
+span {
+    color: #f230f2;
+}
+
+.about-text p {
+    color: black;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    line-height: 28px;
+}
+
+#talk {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+#talk:hover {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.service {
+    background-color: white;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title {
+    color: black;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #000000;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #fff;
+}
+
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.pra p::selection {
+    color: white;
+}
+
+.card .button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #ffffff;
+    transition: .4s;
+}
+
+.contact {
+    width: 100%;
+    height: 290px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact p {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.button-two {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.button-two:hover {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000;
+    cursor: pointer;
+}
+
+footer {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: 4101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: black;
+    font-size: 20px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+}
+.social a:hover{
+    border: 2px solid #000000;
+    
+    background-color: transparent;
+    color: #000000;
+    transition: 0.4s;
+}
+.end{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    bottom: 35px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.end:hover{
+   
+    transform: scale(1.2);
+    background-color: transparent;
+    color: #aa0daa;
+    transition: 0.4s;
+    
+}
